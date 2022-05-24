@@ -22,11 +22,11 @@
     "typescript": "^4.5.2"
   },
   "scripts": {
-    "start": "npm run setup && ts-node bin/server.ts",
+    "start": "npm run setup && npm run logWeather && ts-node bin/server.ts",
     "getWeather": "ts-node bin/getWeather.ts",
     "logWeather": "ts-node bin/logWeather.ts",
     "listWeather": "ts-node bin/listWeather.ts",
-    "weatherLogger": "npm run setup && ts-node crons/weatherLogger.ts",
+    "weatherLogger": "npm run setup && npm run logWeather && ts-node crons/weatherLogger.ts",
     "setup": "ts-node bin/setup.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
