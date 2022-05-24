@@ -1,0 +1,7 @@
+.env
+node_modules
+data
+tmp
+redis.conf
+dump.rdb
+.idea
