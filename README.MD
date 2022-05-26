@@ -32,7 +32,7 @@ Note that if using Redis `DB_NAME` and `DB_USER` should **not** be set. In addit
 ## Local Setup
 1. Clone the repository using `git clone git@github.com:danielpataki/weatherlogger.git`
 2. Run `npm i` in the resulting folder to install dependencies
-3. Create a file named `.env` and add the envionment variables to it. Take a look at [.env.example](,env.example) for an example. 
+3. Create a file named `.env` and add the envionment variables to it. Take a look at [.env.example](.env.example) for an example. 
 4. Make sure your database is up and running, ready to accept connections
 5. Run `npm run setup` to create the required database table
 
