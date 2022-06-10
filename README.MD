@@ -48,4 +48,4 @@ Once everything is set up correctly you should be able to issue the following co
 ## Kinsta Setup
 Note that at the moment application and database hosting services are operating in closed beta status. We're reaching out to a small number of Kinsta customers but as time goes by we will expand the beta. If you'd like to participate please drop us a line at research@kinsta.com with a short description of why.
 
-Head on over to the [Kinsta beta documentation](https://cuddly-succotash-5bf2b653.pages.github.io/) to learn how to deploy this service live. 
+Head on over to the [Kinsta beta documentation](https://kinsta.github.io/kinsta-beta-documentation/#/) to learn how to deploy this service live. 
