@@ -6,8 +6,12 @@ const app = express()
 
 app.get('/', async (req, res) => {
   const weatherData = await db.listWeatherData()
-  const table = tableify(weatherData)
-  res.send(table)
+  if(weatherData.length === 0) {
+    res.send("Waiting for weather data") 
+  } else {
+    const table = tableify(weatherData)
+    res.send(table)
+  }
 })
 
 app.listen(process.env.PORT, () => {
