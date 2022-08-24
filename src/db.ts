@@ -19,16 +19,6 @@ const dbFunctions = {
       }
     }
   },
-  mongodb: {
-    insertWeatherData: async weatherData => {
-      const mongo = await db.connection()
-      return mongo.collection(dbTableName).insertOne({...weatherData})
-    },
-    listWeatherData: async () => {
-      const mongo = await db.connection()
-      return mongo.collection(dbTableName).find({}, {projection: { _id: 0 }}).sort({ time: -1 }).limit(100).toArray()
-    }
-  },
   redis: {
     insertWeatherData: async weatherData => {
       const redis = await db.connection()

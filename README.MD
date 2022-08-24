@@ -4,7 +4,6 @@ This is a small Node based weather data logging application, the purpose of whic
 
 ## Supported Databases
 To be able to test multiple databases on Kinsta you can use environment variables to change the database used by the application (more on specific setup below). The following databases are supported: 
-* MongoDB
 * MySQL
 * MariaDB
 * PostreSQL
@@ -18,7 +17,7 @@ The following environment variables need to be set for the application to functi
 
 * `OPENWEATHER_KEY`: The API key you generated for OpenWeatherMap services
 * `WEATHER_LOCATION`: A location to get weather for, for example: `paris`, `tokyo`. If not given the default is `paris`
-* `DB_TYPE`: The type of database you'd like to use. Should be one of the following: `mongodb`, `mysql`, `mariadb`, `postgresql`, `redis`.  If not given the default is `mysql`
+* `DB_TYPE`: The type of database you'd like to use. Should be one of the following: `mysql`, `mariadb`, `postgresql`, `redis`.  If not given the default is `mysql`
 * `UNIT`: The unit of measurement you'd like to use. `metric` for Celsius and km/h or `imperial` for Fahrenheit and mi/h.  If not given the default is `metric`
 * `FREQUENCY` The frequency with which to grab new weather data, 1-60 to represent every 1 minute to every 60 minutes.  If not given the default is `3`
 * `DB_HOST`: The hostname of your database
